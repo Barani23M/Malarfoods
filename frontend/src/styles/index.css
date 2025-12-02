@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Poppins', sans-serif;
+
+  --color-primary: #7b1b3b;
+  /* Maroon from header/buttons */
+  --color-secondary: #fdb913;
+  /* Gold/Yellow from accents */
+  --color-text-primary: #333333;
+  --color-text-secondary: #666666;
+  --color-bg-body: #fffef8;
+  /* Light cream background */
+  --color-bg-white: #ffffff;
+
+  --spacing-container: 1300px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-body);
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f0e6d2' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  /* Subtle pattern */
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: var(--spacing-container);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.section-heading h2 {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  color: var(--color-text-primary);
+  display: inline-block;
+  position: relative;
+  padding: 0 20px;
+}
+
+.section-heading h2::before,
+.section-heading h2::after {
+  content: '🎊';
+  /* Using emoji as placeholder for the decorative element */
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-family: var(--font-heading);
+  font-style: italic;
+  color: var(--color-text-secondary);
+  margin-bottom: 30px;
+  font-size: 16px;
+}

@@ -8,11 +8,11 @@
 		<version>3.2.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ramadevi</groupId>
+	<groupId>com.malarfoods</groupId>
 	<artifactId>backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>backend</name>
-	<description>Backend for Ramadevi Foods</description>
+	<description>Backend for Malarfoods</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
